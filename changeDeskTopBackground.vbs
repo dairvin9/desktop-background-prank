@@ -1,10 +1,7 @@
 dim shell
 dim user
 
-
-
-
-'old crapware
+'Sets the desktop background as a picture
 Set shell = WScript.CreateObject("WScript.Shell")
 
 user = shell.ExpandEnvironmentStrings("%USERNAME%")
@@ -15,7 +12,6 @@ windowsDir = fso.GetSpecialFolder(0)
 
 'Working out where to save file
 wallpaper =  "picture.bmp"
-
 
 
 shell.RegWrite "HKCU\Control Panel\Desktop\Wallpaper", wallpaper
@@ -30,7 +26,7 @@ shell.Run "C:\Windows\System32\RUNDLL32.EXE user32.dll,UpdatePerUserSystemParame
 RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
 
 
-'new crapware
+'downloads a new picture from the internet
 'grabs file from internet
 surl="http://students.cse.tamu.edu/irvin/picture.bmp"
 slocal="picture.bmp"
