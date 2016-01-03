@@ -13,11 +13,10 @@ Set fso = CreateObject("Scripting.FileSystemObject")
 
 windowsDir = fso.GetSpecialFolder(0)
 
-'cannot find the path specified
-wallpaper =  "C:\Users\Denise\Documents\Scripts\shialebeoftrucks.bmp"'"http://students.cse.tamu.edu/irvin/dogePic.bmp"
+'Working out where to save file
+wallpaper =  "picture.bmp"
 
-'http://fanaru.com/doge/image/43826-doge-wow-doge.jpg
-'wallpaper = "http://fanaru.com/doge/image/43826-doge-wow-doge.jpg"
+
 
 shell.RegWrite "HKCU\Control Panel\Desktop\Wallpaper", wallpaper
 
@@ -33,8 +32,8 @@ RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
 
 'new crapware
 'grabs file from internet
-surl="http://students.cse.tamu.edu/irvin/dogePic.bmp"
-slocal="newDogePic.bmp"
+surl="http://students.cse.tamu.edu/irvin/picture.bmp"
+slocal="picture.bmp"
 
 on error resume next
 set oxmlhttp=createobject("msxml2.xmlhttp")
