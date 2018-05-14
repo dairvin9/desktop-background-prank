@@ -1,4 +1,4 @@
-# Edit this fiel on line 3 to get the picture you want, and line 3 and 8 to save it to wherever you want. You will want to export it as an app to run it on startup if that is your thing.
+# Edit this file on line 3 to get the picture you want, and line 3 and 8 to save it to wherever you want. You will want to export it as an app to run it on startup if that is your thing.
 delay (10) # Ya gotta wait for internet access bro (If running on startup, which I like to do)
 do shell script "curl http://myfunnymemes.com/wp-content/uploads/2015/04/Doge-Meets-Vladmir-Putin-In-Russia-Wow.jpg -o /Users/nameOfTarget/Downloads/wonderful.jpg" # Protip: save file to a .dotfile for hidden pictures!
 tell application "System Events"
